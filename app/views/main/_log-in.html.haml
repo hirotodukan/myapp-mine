@@ -1,0 +1,21 @@
+.header
+  .header__main
+    App-name
+.main_img
+  .main_img__main
+    .main_img__main__header
+      .main_img__main__header__name
+        ログイン
+    .main_img__main__box
+      .main_img__main__box__form-box
+        .main_img__main__box__form-box__point
+          名前
+        %input.login-input-text{:name => "name", :placeholder => "", :type => "name", :value => ""}/
+
+      .main_img__main__box__form-box
+        .main_img__main__box__form-box__point
+          パスワード
+        %input.login-input-text{:name => "password", :placeholder => "", :type => "password", :value => ""}/
+
+      .main_img__main__box__send-log
+        %input.main_img__main__box__send__btn{:name => "create", :placeholder => "", :type => "submit", :value => "ログイン"}/
