@@ -1,0 +1,26 @@
+.main_img
+  .main_img__main
+    .main_img__main__header
+      .main_img__main__header__name
+        投稿
+      .main_img__main__box
+        .main_img__main__box__create
+          .main_img__main__box__create__name
+            .main_img__main__box__create__name__point
+              タイトル
+            %input.login-input-title{:name => "title", :placeholder => "", :type => "name", :value => ""}/
+          .main_img__main__box__create__image
+            .main_img__main__box__create__image__box__point
+              画像
+            %input.main_img__main__box__create__image__box{:name => "image", :placeholder => "", :type => "file", :value => ""}/
+            
+          .main_img__main__box__create__wriget
+            .main_img__main__box__create__wriget__point
+              ジャンル
+            %input.login-input-wriget{:name => "genre", :placeholder => "", :type => "name", :value => ""}/
+          .main_img__main__box__create__wriget
+            .main_img__main__box__create__wriget__point
+              コメント
+            %input.login-input-wriget{:name => "comment", :placeholder => "", :type => "name", :value => ""}/
+        .main_img__main__box__send
+          %input.main_img__main__box__send__btn{:name => "create", :placeholder => "", :type => "submit", :value => "Create Account"}/
