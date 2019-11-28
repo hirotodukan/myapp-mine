@@ -1,8 +1,10 @@
 .header
   .header__main
-    App-name
-    .header__main__post
-      Post
+    = link_to root_path do
+      App-name
+    = link_to new_review_path do
+      .header__main__post
+        Post
     .header__main__box
       .header__main__box__category
         Category

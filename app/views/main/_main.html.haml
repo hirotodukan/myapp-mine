@@ -6,20 +6,24 @@
     .main_img__main__box
       .main_img__main__box__content
         .main_img__main__box__content__name
-          キングダム
+          - @reviews.each do |review|
+            =review.title
         .main_img__main__box__content__image
-          .main_img__main__box__content__image__box
-            
+          - @reviews.each do |review|
+            = image_tag review.image,size:"312x400",class: ".image__box"
         .main_img__main__box__content__wriget
           .main_img__main__box__content__wriget__point
             ジャンル
           .main_img__main__box__content__wriget__comment
-            青年漫画・戦国時代（中国）
+            - @reviews.each do |review|
+              =review.genre
         .main_img__main__box__content__wriget
           .main_img__main__box__content__wriget__point
             コメント
           .main_img__main__box__content__wriget__comment
-            絶対読んだほうがいい！
+            - @reviews.each do |review|
+              =review.comment
+          
         .main_img__main__box__content__user
           Hiroto
 
@@ -79,5 +83,4 @@
             絶対読んだほうがいい！
         .main_img__main__box__content__user
           Hiroto
-
 
