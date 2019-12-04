@@ -8,5 +8,6 @@
     .header__main__box
       .header__main__box__category
         Category
-      .header__main__box__user
-        User
+      = link_to new_user_session_path do
+        .header__main__box__user
+          ログイン

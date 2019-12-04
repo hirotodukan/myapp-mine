@@ -129,7 +129,7 @@
               .image__box{
                 //background-image: url(images.jpeg);
                 background-size: cover;
-                width: 332px;
+                width: 312px;
                 height: 400px;
                 background-position: center;
               }
@@ -249,6 +249,7 @@
             width: 228px;
             float: right;
             margin-top: 3px;
+            font-size: 14px;
           }
         }
 
@@ -259,6 +260,11 @@
           width: 312px;
           margin: 10px auto;
           
+          .image_box{
+            width: 312px;
+            height: 400px;
+
+          }
 
           &__box{
             font-size: 14px;
@@ -293,6 +299,7 @@
           margin: 10px 10px;
           border-bottom: solid 1px black;
           padding-bottom: 5px;
+          font-size: 14px;
           
           &__point{
             height: 20px;

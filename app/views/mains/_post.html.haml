@@ -1,0 +1,37 @@
+= form_for [@review] do |f|
+  .main_img
+    .main_img__main
+      .main_img__main__header
+        .main_img__main__header__name
+          投稿
+        .main_img__main__box
+          .main_img__main__box__create
+            .main_img__main__box__create__name
+              .main_img__main__box__create__name__point
+                タイトル
+              
+              = f.text_field :title, class: 'login-input-title', placeholder: ''
+              //%input.login-input-title{:name => "title", :placeholder => "", :type => "name", :value => ""}/
+            .main_img__main__box__create__image
+              .main_img__main__box__create__image__box__point
+                画像
+              //= form_for [@review] do |f|
+              = f.file_field :image, class: 'main_img__main__box__create__image__box', placeholder: ''
+              //%input.main_img__main__box__create__image__box{:name => "image", :placeholder => "", :type => "file", :value => ""}/
+              
+            .main_img__main__box__create__wriget
+              .main_img__main__box__create__wriget__point
+                ジャンル
+              //= form_for [@review] do |f|
+              = f.text_field :genre, class: 'login-input-wriget', placeholder: ''
+              //%input.login-input-wriget{:name => "genre", :placeholder => "", :type => "name", :value => ""}/
+            .main_img__main__box__create__wriget
+              .main_img__main__box__create__wriget__point
+                コメント
+              //= form_for [@review] do |f|
+              = f.text_field :comment, class: 'login-input-wriget', placeholder: ''
+              //%input.login-input-wriget{:name => "comment", :placeholder => "", :type => "name", :value => ""}/
+          .main_img__main__box__send
+            //= form_for [@review] do |f|
+            = f.submit "Create", class: "main_img__main__box__send__btn"
+            //%input.main_img__main__box__send__btn{:name => "create", :placeholder => "", :type => "submit", :value => "Create Account"}/

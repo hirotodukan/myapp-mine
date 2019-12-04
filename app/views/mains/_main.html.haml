@@ -1,0 +1,67 @@
+- @reviews.each do |review|
+  .main_img
+    .main_img__main
+      .main_img__main__header
+        .main_img__main__header__name
+          Reviews
+      .main_img__main__box
+        .main_img__main__box__content
+          .main_img__main__box__content__name
+            =review.title
+          .main_img__main__box__content__image
+            = image_tag "modules/images.jpeg",size:"312x400",class: "image__box"
+            //= image_tag review.image,size:"312x400",class: "image__box" if review.image.present?
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              ジャンル
+            .main_img__main__box__content__wriget__comment
+              =review.genre
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              コメント
+            .main_img__main__box__content__wriget__comment
+              =review.comment
+            
+          .main_img__main__box__content__user
+            Hiroto
+
+
+        .main_img__main__box__content
+          .main_img__main__box__content__name
+            ワンピース
+          .main_img__main__box__content__image
+            = image_tag "modules/one.jpeg",size:"312x400",class: "image__box"
+            //= image_tag review.image,size:"312x400",class: "image__box" if review.image.present?
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              ジャンル
+            .main_img__main__box__content__wriget__comment
+              少年漫画・海賊
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              コメント
+            .main_img__main__box__content__wriget__comment
+              １度は読んだ方が良い
+            
+          .main_img__main__box__content__user
+            Hiroto
+
+        .main_img__main__box__content
+          .main_img__main__box__content__name
+            ドラゴンボール
+          .main_img__main__box__content__image
+            = image_tag "modules/doragonn.jpeg",size:"312x400",class: "image__box"
+            //= image_tag review.image,size:"312x400",class: "image__box" if review.image.present?
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              ジャンル
+            .main_img__main__box__content__wriget__comment
+              少年漫画・冒険
+          .main_img__main__box__content__wriget
+            .main_img__main__box__content__wriget__point
+              コメント
+            .main_img__main__box__content__wriget__comment
+              １度は読んだ方が良い
+            
+          .main_img__main__box__content__user
+            Hiroto
